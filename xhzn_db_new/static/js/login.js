@@ -7,16 +7,23 @@ $(document).ready(function () {
             username:username,
             password:password,
         }
+        // var data={
+        //     action:'Login',
+        //     body:body,
+        //     type:'query',
+        // }
         $.ajax({
             url:'/ajax/',
             type:'POST',
             data:{
-                action:'Login',
+                action:'login',
                 body:body,
                 type:'query',
             },
             success:function(callback){
+
                 var callback_dict = $.parseJSON(callback);
+                console.log(callback_dict)
                 if (callback_dict.status==true){
                     layer.msg(callback_dict.msg);
                 }else{
