@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/',views.login),
     path('ajax/',views.ajax),
+    path('ajax1/',views.ajax1),
 ]

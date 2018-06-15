@@ -45,7 +45,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    #Ajax通过Post发送数据需要将下面一句隐掉
+    #Ajax通过Post发送数据需要将下面一句隐掉，该方法是验证用户的cookie，隐掉对用户来说不是很安全
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
