@@ -78,6 +78,7 @@ class t_l3f2cm_site_common(models.Model):
     latitude = models.DecimalField(max_digits=10, decimal_places=6)
     comments = models.TextField(null=True)
 class t_l3f2cm_device_common(models.Model):
+    #null=true显示的是数据库中该字段可以为空，blank=true表示在admin后台管理界面上该字段可以不填
     dev_code=models.CharField(max_length=20,primary_key=True)
     site_code=models.ForeignKey(t_l3f2cm_site_common,on_delete=models.CASCADE)
     create_date=models.DateTimeField(auto_now=True)

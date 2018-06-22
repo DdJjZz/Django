@@ -1,5 +1,6 @@
 $(document).ready(function () {
     close_windews();
+    close_dialog()
     get_menulist();
     $('#Menu_Manage').css('display','block');
     $('#menu').on('click',function () {
@@ -30,19 +31,30 @@ $(document).ready(function () {
         close_windews();
         $('#Site_Manage').css('display','block');
     });
+    $('#Menu_add').on('click',function () {
+        layer.open({
+            type:1,
+            title:"添加菜单",
+            content:$('#Menu_New'),
+            closeBtn:0,
+            shade: false,
+            btn:['确定','取消'],
+            btn1: function(){
+                close_dialog();
+                layer.closeAll();
+            },
+            btn2: function(){
+                close_dialog();
+                layer.closeAll();
+            },
+        });
+    })
 });
+function close_dialog() {
+    $('.dialog').css('display','none');
+}
 function close_windews(){
     $('.Menu_windows').css('display','none');
-}
-function ajax_function(url,data,type){
-    $.ajax({
-        url:url,
-        type:type,
-        data:data,
-        success:function (data) {
-            data=JSON.parse(data)
-        }
-    });
 }
 function get_menulist(){
     $.ajax({
@@ -62,7 +74,6 @@ function get_menulist(){
         }
     });
 }
-
 function bulidmenulist(code,name) {
     // var menulist="<option value='all' selected=''>全部菜单</option>"
     var codelist="";

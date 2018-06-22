@@ -138,11 +138,15 @@ def auth_menu(line,group):
     Auth.save()
 if __name__ == '__main__':
     print('Work Start')
+    a="admin123"
+    hl=hashlib.md5()
+    hl.update(a.encode(encoding='utf-8'))
+    print(hl.hexdigest())
     # delete_map()
-    for key in faam1['menu']:
-        print(faam1['menu'][key])
-        print(key)
-        insert_map(faam1['menu'][key],key)
+    # for key in faam1['menu']:
+    #     print(faam1['menu'][key])
+    #     print(key)
+    #     insert_map(faam1['menu'][key],key)
 
     # insert_user()
 

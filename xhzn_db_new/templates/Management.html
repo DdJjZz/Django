@@ -7,6 +7,7 @@
     <link href="../static/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../static/css/manage.css" rel="stylesheet" />
 </head>
+
 <body>
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
@@ -45,11 +46,23 @@
         <div class="layui-icon layui-icon-404 Menu_windows" style="font-size: 500px;left: 50%;top: 50%" id="404Page"></div>
         <div class="Menu_windows" style="padding: 15px;" id="Menu_Manage">
             <div class="layui-btn-group">
-                <button class="layui-btn layui-icon layui-icon-add-1" style="font-size: 25px"></button>
-                <button class="layui-btn layui-icon layui-icon-delete" style="font-size: 25px"></button>
-                <button class="layui-btn layui-icon layui-icon-edit" style="font-size: 25px"></button>
+                <button class="layui-btn layui-icon layui-icon-add-1" style="font-size: 25px" id="Menu_add"></button>
+                <button class="layui-btn layui-icon layui-icon-delete" style="font-size: 25px" id="Menu_del"></button>
+                <button class="layui-btn layui-icon layui-icon-edit" style="font-size: 25px" id="Menu_edit"></button>
             </div>
             <p></p>
+            <div class="dialog" id="Menu_New">
+                <div class="input-group">
+                    <span class="input-group-addon" id="Username" style="min-width: 100px">菜单编号</span>
+                    <input type="text" class="form-control" placeholder="请输入菜单编号" aria-describedby="basic-addon1" id="Username_Input"/>
+                </div>
+                <p></p>
+                <div class="input-group">
+                    <span class="input-group-addon" id="Password" style="min-width: 100px">菜单名称</span>
+                    <input type="password" class="form-control" placeholder="请输入菜单名称" aria-describedby="basic-addon1" id="Password_Input"/>
+                </div>
+                <p></p>
+            </div>
             <div class="input-group">
                 <span class="input-group-addon" style="min-width: 100px">菜单代码</span>
                 <select class="form-control" id="Code_select">
@@ -80,8 +93,7 @@
         <div class="Menu_windows" style="padding: 15px;" id="Site_Manage">站点管理</div>
     </div>
     <div class="layui-footer">
-    <!-- 底部固定区域 -->
-    © 小慧智能
+    © layui
     </div>
 </div>
 </body>
