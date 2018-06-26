@@ -1,3 +1,5 @@
+var nameList=[]
+var codeList=[]
 $(document).ready(function () {
     close_windews();
     close_dialog()
@@ -31,6 +33,10 @@ $(document).ready(function () {
         close_windews();
         $('#Site_Manage').css('display','block');
     });
+    $('#Code_select').on('change',function () {
+        console.log("Hello World")
+
+    })
     $('#Menu_add').on('click',function () {
         layer.open({
             type:1,
@@ -66,10 +72,10 @@ function get_menulist(){
         },
         success:function (data) {
             data=JSON.parse(data)
-            var codelist=data.status.code;
-            var namelist=data.status.name;
+            codeList=data.status.code;
+            nameList=data.status.name;
             if(data.ret==true){
-                bulidmenulist(codelist,namelist);
+                bulidmenulist(codeList,nameList);
             }
         }
     });
@@ -82,8 +88,8 @@ function bulidmenulist(code,name) {
         codelist=codelist+"<option value="+code[i]+">"+code[i]+"</option>";
         namelist=namelist+"<option value="+code[i]+">"+name[i]+"</option>";
     }
-    $("#Code_select").empty();
+    // $("#Code_select").empty();
     $("#Code_select").append(codelist);
-    $("#Name_select").empty();
+    // $("#Name_select").empty();
     $("#Name_select").append(namelist);
 }
