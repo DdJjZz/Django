@@ -1,0 +1,1093 @@
+!SESSION 2018-05-28 08:32:57.631 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -login -application com.aptana.commandline.launcher.LauncherApplication C:\projects\xherp\js\app.js
+Command-line arguments:  -os win32 -ws win32 -arch x86 -login -data   -application com.aptana.commandline.launcher.LauncherApplication C:\projects\xherp\js\app.js
+
+!ENTRY org.eclipse.ui 2 0 2018-05-28 08:32:58.747
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-05-28 08:32:58.747
+!MESSAGE Could not parse key sequence: plug-in='com.pandora.ui', id='org.eclipse.ui.edit.text.contentAssist.proposals', keySequence='Ctrl+Sapce'
+
+!ENTRY com.aptana.rcp 4 0 2018-05-28 08:32:58.875
+!MESSAGE ********HBuilder正常启动：preStartup********
+
+!ENTRY com.aptana.scripting 4 0 2018-05-28 08:32:59.840
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'Build–in constant' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.scripting 4 0 2018-05-28 08:32:59.842
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'library class/type' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.rcp 4 0 2018-05-28 08:33:00.007
+!MESSAGE ---------------------start check----------------------
+
+!ENTRY com.aptana.rcp 4 0 2018-05-28 08:33:00.008
+!MESSAGE check mode
+
+!ENTRY com.aptana.rcp 4 0 2018-05-28 08:33:00.060
+!MESSAGE workspace : file:\C:\projects\xherp\js
+
+!ENTRY com.aptana.rcp 4 0 2018-05-28 08:33:00.313
+!MESSAGE ********HBuilder正常启动：postStartup********
+
+!ENTRY com.pandora.rcp.upgrade 4 0 2018-05-28 08:33:00.362
+!MESSAGE (Build null) [ERROR]  HBuilder当前版本: 9.0.6.201805251400
+
+!ENTRY com.aptana.editor.css 4 0 2018-05-28 08:33:01.037
+!MESSAGE (Build null) [ERROR]  开始清理css错误marker...
+
+!ENTRY com.aptana.editor.css 4 0 2018-05-28 08:33:01.039
+!MESSAGE (Build null) [ERROR]  清理css错误marker结束
+
+!ENTRY com.pandora.index.store 4 0 2018-05-28 08:33:01.160
+!MESSAGE (Build null) [ERROR]  Port already in use: 56789; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+!STACK 0
+java.rmi.server.ExportException: Port already in use: 56789; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+	at sun.rmi.transport.tcp.TCPTransport.listen(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.exportObject(Unknown Source)
+	at sun.rmi.transport.tcp.TCPEndpoint.exportObject(Unknown Source)
+	at sun.rmi.transport.LiveRef.exportObject(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.exportObject(Unknown Source)
+	at sun.rmi.registry.RegistryImpl.setup(Unknown Source)
+	at sun.rmi.registry.RegistryImpl.<init>(Unknown Source)
+	at java.rmi.registry.LocateRegistry.createRegistry(Unknown Source)
+	at com.pandora.index.store.IndexStoreStartup.run(IndexStoreStartup.java:28)
+	at com.pandora.index.store.IndexStoreStartup.earlyStartup(IndexStoreStartup.java:18)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$69.run(Workbench.java:2726)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.TwoStacksPlainSocketImpl.socketBind(Native Method)
+	at java.net.TwoStacksPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.TwoStacksPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createServerSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createServerSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(Unknown Source)
+	... 15 more
+
+!ENTRY com.pandora.launcher.core 4 0 2018-05-28 08:33:01.321
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.<clinit>(LibraryFinder.java:50)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.<clinit>(WinDeviceLibrary.java:72)
+	at com.pandora.launcher.core.iphone.jna.idevice.DeviceLibraryRegistry.getDeviceLibrary(DeviceLibraryRegistry.java:15)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher.<init>(IPhoneLauncher.java:109)
+	at com.pandora.launcher.core.listener.DeviceStartupListener.earlyStartup(DeviceStartupListener.java:29)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$69.run(Workbench.java:2726)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.launcher.core 4 0 2018-05-28 08:33:01.325
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getMDLibrary(LibraryFinder.java:122)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.<clinit>(WinDeviceLibrary.java:72)
+	at com.pandora.launcher.core.iphone.jna.idevice.DeviceLibraryRegistry.getDeviceLibrary(DeviceLibraryRegistry.java:15)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher.<init>(IPhoneLauncher.java:109)
+	at com.pandora.launcher.core.listener.DeviceStartupListener.earlyStartup(DeviceStartupListener.java:29)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$69.run(Workbench.java:2726)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.launcher.core 4 0 2018-05-28 08:33:01.334
+!MESSAGE (Build null) [ERROR]  添加Android设备监听......
+
+!ENTRY com.pandora.stats.core 1 0 2018-05-28 08:33:01.350
+!MESSAGE 
+
+!ENTRY com.pandora.launcher.core 4 0 2018-05-28 08:33:01.452
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getMDLibrary(LibraryFinder.java:122)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.addNotificationHandler(WinDeviceLibrary.java:77)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher$5.run(IPhoneLauncher.java:799)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.launcher.core 4 0 2018-05-28 08:33:01.461
+!MESSAGE (Build null) [ERROR]  library is null!!!!!
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:01.633
+!MESSAGE (Build null) [ERROR]  ADB PID:::6032
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:01.778
+!MESSAGE (Build null) [ERROR]  ADB PID:::6032
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:01.782
+!MESSAGE (Build null) [ERROR]  ADB PID:::6032
+
+!ENTRY com.aptana.parsing 4 0 2018-05-28 08:33:01.804
+!MESSAGE (Build null) [ERROR]  无效的属性类型“.webkit.SearchBoxImpl@4135441”属性“searchBoxJavaBridge_”
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.054
+!MESSAGE (Build null) [ERROR]  ===Caption  ExecutablePath
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.054
+!MESSAGE (Build null) [ERROR]  ===adb.exe  D:\HBuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.055
+!MESSAGE (Build null) [ERROR]  exe===adb.exe   path===d:\hbuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.056
+!MESSAGE (Build null) [ERROR]  ===Caption  ExecutablePath
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.057
+!MESSAGE (Build null) [ERROR]  ===adb.exe  D:\HBuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.057
+!MESSAGE (Build null) [ERROR]  exe===adb.exe   path===d:\hbuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.059
+!MESSAGE (Build null) [ERROR]  ===Caption  ExecutablePath
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.060
+!MESSAGE (Build null) [ERROR]  ===adb.exe  D:\HBuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.061
+!MESSAGE (Build null) [ERROR]  exe===adb.exe   path===d:\hbuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.067
+!MESSAGE (Build null) [ERROR]  ADB Path===d:\hbuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.070
+!MESSAGE (Build null) [ERROR]  ADB Path===d:\hbuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2018-05-28 08:33:02.073
+!MESSAGE (Build null) [ERROR]  ADB Path===d:\hbuilder\tools\adbs\adb.exe
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2018-05-28 08:33:02.122
+!MESSAGE D:\HBuilder\p2\org.eclipse.equinox.p2.repository\cache\content-561804826.jar 是合法的jar
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2018-05-28 08:33:02.547
+!MESSAGE D:\HBuilder\p2\org.eclipse.equinox.p2.repository\cache\content1190459293.jar 是合法的jar
+
+!ENTRY org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.paste':
+HandlerActivation(commandId=org.eclipse.ui.edit.paste,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$10@1965b85,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.paste,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$10@5288f6,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.lineStart':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineStart,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$14@9df392,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineStart,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$14@1e207ff,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.smartEnter':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.smartEnter,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$13@7b0ee8,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.smartEnter,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$13@10fb200,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.select.lineEnd':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineEnd,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$17@16f56f6,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineEnd,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$17@b669a1,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.lineEnd':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineEnd,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$15@1d105ea,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineEnd,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$15@1db6768,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.copy':
+HandlerActivation(commandId=org.eclipse.ui.edit.copy,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$9@161ddcb,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.copy,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$9@287180,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.redo':
+HandlerActivation(commandId=org.eclipse.ui.edit.redo,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$12@133bee5,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.redo,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$12@39e258,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$7@3b2266,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$7@4f7154,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.select.lineStart':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineStart,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$16@1994d3d,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineStart,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$16@19dfd55,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.undo':
+HandlerActivation(commandId=org.eclipse.ui.edit.undo,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$11@16318e7,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.undo,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$11@f81597,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.443
+!MESSAGE Conflict for 'org.eclipse.ui.edit.cut':
+HandlerActivation(commandId=org.eclipse.ui.edit.cut,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$8@1517742,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.ui.edit.cut,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$8@16ca445,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-05-28 08:33:13.444
+!MESSAGE Conflict for 'org.eclipse.search.ui.openSearchDialog':
+HandlerActivation(commandId=org.eclipse.search.ui.openSearchDialog,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$18@194e830,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@27d7d0,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+HandlerActivation(commandId=org.eclipse.search.ui.openSearchDialog,
+	handler=com.pandora.quicksearch.ui.QuickSearchText$18@117b15b,
+	expression=AndExpression(com.pandora.quicksearch.ui.QuickSearchText$6@173e4d8,WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1241039)),sourcePriority=-2147467264)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:19.371
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:20.654
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:21.847
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:22.255
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:22.606
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:22.782
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:22.966
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:23.126
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:23.310
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:23.494
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:24.222
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:24.422
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:24.598
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:24.783
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-28 08:33:25.036
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.search.ui.text.FileTextSearchScope.addToList(FileTextSearchScope.java:295)
+	at org.eclipse.search.ui.text.FileTextSearchScope.removeRedundantEntries(FileTextSearchScope.java:271)
+	at org.eclipse.search.ui.text.FileTextSearchScope.newSearchScope(FileTextSearchScope.java:77)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.getActiveEditorResourcesScope(TextSearchPage.java:316)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.createTextSearchScope(TextSearchPage.java:297)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.newQuery(TextSearchPage.java:239)
+	at org.eclipse.search.internal.ui.text.TextSearchPage.performAction(TextSearchPage.java:245)
+	at org.eclipse.search.internal.ui.SearchDialog.performAction(SearchDialog.java:541)
+	at org.eclipse.search.internal.ui.util.ExtendedDialogWindow.buttonPressed(ExtendedDialogWindow.java:164)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.pandora.quicksearch.ui.internal.quicksearch.SearchInCurrentEditorElement.execute(SearchInCurrentEditorElement.java:80)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleElementSelected(QuickSearchDialog.java:448)
+	at com.pandora.quicksearch.ui.QuickSearchDialog.handleSelection(QuickSearchDialog.java:438)
+	at com.pandora.quicksearch.ui.QuickSearchDialog$8.mouseDoubleClick(QuickSearchDialog.java:336)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:195)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2957)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2921)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:689)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:678)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:224)
+	at com.aptana.commandline.launcher.application.LauncherApplication.start(LauncherApplication.java:76)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:348)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:655)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1491)
+
+!ENTRY com.pandora.stats.core 4 0 2018-05-28 08:34:04.445
+!MESSAGE (Build null) [ERROR]  list job time: 3063
+
+!ENTRY com.aptana.rcp 4 0 2018-05-28 08:37:15.408
+!MESSAGE ********HBuilder正常关闭：preShutdown********
+
+!ENTRY com.aptana.commandline.launcher 4 0 2018-05-28 08:37:15.414
+!MESSAGE socket closed
+!STACK 0
+java.net.SocketException: socket closed
+	at java.net.TwoStacksPlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at com.aptana.commandline.launcher.server.LauncherServer$CommandLineArgsServer.run(LauncherServer.java:129)
+
+!ENTRY com.aptana.rcp 4 0 2018-05-28 08:37:15.593
+!MESSAGE ********HBuilder正常关闭：postShutdown********
+
+!ENTRY com.aptana.rcp 1 0 2018-05-28 08:37:16.072
+!MESSAGE close CEF
+
+!ENTRY org.eclipse.core.jobs 2 2 2018-05-28 08:37:16.957
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.pandora.pack.core.download.StartupDownloadPackage$1

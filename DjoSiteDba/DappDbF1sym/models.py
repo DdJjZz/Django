@@ -1,5 +1,6 @@
 from django.db import models
 import datetime
+import time
 # Create your models here.
 class dct_t_l3f1sym_account_primary(models.Model):
     uid=models.CharField(max_length=15,primary_key=True)
@@ -43,4 +44,4 @@ class dct_t_l3f1sym_user_right_project(models.Model):
 class dct_t_l3f1sym_user_login_session(models.Model):
     uid=models.OneToOneField(dct_t_l3f1sym_account_primary.uid,primary_key=True,on_delete=models.CASCADE)
     session_id=models.CharField(max_length=10)
-    timestamp=models.IntegerField(verbose_name="更新时间戳",default=datetime.datetime.now)
+    timestamp=models.IntegerField(verbose_name="更新时间戳",default=time.time())

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.pandora.ui.QuickAccess">
+		<item value="70" key="com.pandora.quicksearch.ui.QuickSearchDialogDIALOG_HEIGHT"/>
+		<item value="458" key="com.pandora.quicksearch.ui.QuickSearchDialogDIALOG_WIDTH"/>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="textEntries">
+		</list>
+	</section>
+</section>

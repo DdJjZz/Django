@@ -38,11 +38,10 @@ LOCAL_HOSTNAME = socket.gethostname()
 #print(LOCAL_HOSTNAME)
 if (SERVER_HOSTNAME_SET.find(LOCAL_HOSTNAME) < 0):
     IS_FORMAL_DEPLOYMENT = False
-    LOCAL_DB_PASSWORD = 'bxxhbxxh';
+    LOCAL_DB_PASSWORD = 'bxxhbxxh'
 else:
     IS_FORMAL_DEPLOYMENT = True
-    LOCAL_DB_PASSWORD = 'bxxhbxxh';
-
+    LOCAL_DB_PASSWORD = 'bxxhbxxh'
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
